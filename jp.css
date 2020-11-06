@@ -1,0 +1,33 @@
+@keyframes animation-sample {
+  0%{
+  opacity:0;
+   transform: :scale(1) rotate(0deg);
+  }
+  50%{
+    opacity:0.2;
+   transform:scale(120) rotate(180deg);
+  }
+  100%{
+    opacity:1;
+    transform:scale(1) rotate(360deg);
+  }
+}
+.hanko{
+  transform: scale(1);
+  animation-name: animation-sample;
+  animation-duration: 1s;
+  transform-origin: 50% 50%;
+  animation-timing-function: linear;
+  width:150px;
+  height:150px;
+
+}
+body {
+  margin:0 auto;
+  width:1170px;
+  text-align: center;
+  padding-top: 80px;
+}
+h1{
+  font-size: 80px;
+}
